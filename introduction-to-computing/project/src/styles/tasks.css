@@ -1,0 +1,75 @@
+.tasks {
+  background-color: var(--overlay);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: var(--z-index-10);
+  transition: 0.3s ease all;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.tasks .title {
+  text-align: center;
+  font-size: 1.7em;
+  width: 60%;
+  margin: 5em auto 0;
+  padding-bottom: 0.7em;
+  color: var(--white);
+  border-bottom: 5px solid var(--white);
+}
+
+.tasks__list {
+  margin: 0 auto 1em;
+  width: 60%;
+  color: var(--white);
+  background-color: var(--blue);
+  list-style: none;
+  padding: 0;
+}
+
+.tasks__list a {
+  display: block;
+  padding: 1.2em;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.2em;
+}
+
+.tasks__list li {
+  transition: 0.3s ease all;
+}
+
+.tasks__list li:hover {
+  background-color: var(--dark-blue);
+}
+
+.tasks__button {
+  position: fixed;
+  bottom: 4em;
+  right: 4em;
+  height: 6em;
+  width: 6em;
+  background-color: var(--blue);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  box-shadow: 3px 5px 10px rgb(59, 59, 59);
+  z-index: var(--z-index-100);
+}
+
+.tasks__button:hover,
+.tasks__button:focus,
+.tasks__button:active {
+  background-color: var(--dark-blue);
+}
+
+.tasks__button i {
+  color: var(--white);
+}

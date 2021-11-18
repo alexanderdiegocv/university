@@ -1,0 +1,65 @@
+.cover {
+  margin: auto;
+  width: 80%;
+  max-width: 1200px;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 15em auto 15em;
+  grid-template-rows: 15em 1fr;
+  grid-template-areas:
+    'l_unheval text l_sistemas'
+    'members members members';
+}
+
+.unheval-logo,
+.sistemas-logo {
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+}
+
+.unheval-logo {
+  grid-area: l_unheval;
+}
+
+.sistemas-logo {
+  grid-area: l_sistemas;
+}
+
+.unheval-text {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--dark-blue);
+  font-weight: 600;
+}
+
+.unheval-text .title {
+  font-size: 1.75em;
+}
+
+.unheval-text .subtitle {
+  font-size: 1.5em;
+}
+
+.members {
+  grid-area: members;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--dark-blue);
+}
+
+.members .subtitle {
+  font-size: 1.5em;
+  margin: 0 0 0.25em;
+}
+
+.member {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}

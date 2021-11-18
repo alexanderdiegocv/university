@@ -1,0 +1,28 @@
+@import url(./variables.css);
+@import url(./tasks.css);
+
+.container {
+  display: grid;
+  grid-template-rows: 8% auto;
+  grid-template-areas:
+    'header'
+    'main';
+  height: 100vh;
+}
+
+.main__header {
+  grid-area: header;
+  background-color: var(--turquoise);
+}
+
+.main {
+  background-color: var(--light-turquoise);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__footer {
+  grid-area: footer;
+  background-color: var(--turquoise);
+}
